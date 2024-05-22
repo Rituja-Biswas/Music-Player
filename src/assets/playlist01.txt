@@ -1,0 +1,3 @@
+C:\Users\ritus\IdeaProjects\MP3MusicPlayer\src\assets\Blue Butterflies.mp3
+C:\Users\ritus\IdeaProjects\MP3MusicPlayer\src\assets\Drive Thru.mp3
+C:\Users\ritus\IdeaProjects\MP3MusicPlayer\src\assets\So Sick.mp3
