@@ -11,7 +11,7 @@ import java.util.ArrayList;
 public class MusicPlaylistDialog extends JDialog {
     private MusicPlayerGUI musicPlayerGUI;
 
-    // store all of the paths to be written to a txt file (when we load a playlist)
+    // store all of the paths to be written to a txt file
     private ArrayList<String> songPaths;
 
     public MusicPlaylistDialog(MusicPlayerGUI musicPlayerGUI){
@@ -82,7 +82,7 @@ public class MusicPlaylistDialog extends JDialog {
                     int result = jFileChooser.showSaveDialog(MusicPlaylistDialog.this);
 
                     if(result == JFileChooser.APPROVE_OPTION){
-                        // we use getSelectedFile() to get reference to the file that we are about to save
+                        //use getSelectedFile() to get reference to the file that we are about to save
                         File selectedFile = jFileChooser.getSelectedFile();
 
                         // convert to .txt file if not done so already
@@ -94,11 +94,11 @@ public class MusicPlaylistDialog extends JDialog {
                         // create the new file at the destinated directory
                         selectedFile.createNewFile();
 
-                        // now we will write all of the song paths into this file
+                        // write all of the song paths into this file
                         FileWriter fileWriter = new FileWriter(selectedFile);
                         BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
 
-                        // iterate through our song paths list and write each string into the file
+                        // iterate through song paths list, write each string into the file
                         // each song will be written in their own row
                         for(String songPath : songPaths){
                             bufferedWriter.write(songPath + "\n");
