@@ -40,7 +40,7 @@ public class MusicPlayerGUI extends JFrame {
         // prevent the app from being resized
         setResizable(false);
 
-        // set layout to null which allows us to control the (x, y) coordinates of our components
+        // set layout to null to control the (x, y) coordinates of our components
         // and also set the height and width
         setLayout(null);
 
@@ -167,11 +167,11 @@ public class MusicPlayerGUI extends JFrame {
         });
         songMenu.add(loadSong);
 
-        // now we will add the playlist menu
+        //add the playlist menu
         JMenu playlistMenu = new JMenu("Playlist");
         menuBar.add(playlistMenu);
 
-        // then add the items to the playlist menu
+        //add the items to the playlist menu
         JMenuItem createPlaylist = new JMenuItem("Create Playlist");
         createPlaylist.addActionListener(new ActionListener() {
             @Override
@@ -274,7 +274,7 @@ public class MusicPlayerGUI extends JFrame {
         add(playbackBtns);
     }
 
-    // this will be used to update our slider from the music player class
+    // update slider from the music player class
     public void setPlaybackSliderValue(int frame){
         playbackSlider.setValue(frame);
     }
